@@ -1,0 +1,10 @@
+<h1>Le Wagon's cocktails</h1>
+<p>Beverages for fuun</p>
+<%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
+
+<!-- Where are coctial_path, new_cocktail_path and so on defined? -->
+<% @cocktails.each do |cocktail| %>
+  <h2><%= cocktail.name %></h2>
+  <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+<% end %>
+
