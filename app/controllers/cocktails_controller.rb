@@ -1,9 +1,9 @@
 class CocktailsController < ApplicationController
-  # before_action :set_cocktail, only: [:show, :create,]
+  before_action :set_cocktail, only: [:show]
   # Don't I need to specify which routes/methods to have?
 
   def index
-    @cocktails = Cocktail.all
+    @cocktails = Cocktail.all # Just retrieving informations
   end
 
   def show
